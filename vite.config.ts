@@ -10,5 +10,7 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./src/setup.ts'],
+    // Causes vitest to crash
+    // globalSetup: ['./src/globalSetup.ts']
   },
 })
